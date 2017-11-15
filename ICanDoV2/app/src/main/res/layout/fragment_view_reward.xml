@@ -1,0 +1,90 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.cheskalouise.icandov2.ViewReward">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f8f8f6">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Relax"
+                android:textSize="27sp"
+                android:textColor="#234a56"
+                android:textStyle="bold"
+                android:layout_marginBottom="15dp"
+                android:id="@+id/tv_title"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lorem ipsum dolor sit amet, consectur adipsicing elit"
+                android:textSize="20sp"
+                android:textColor="#234a56"
+                android:layout_marginBottom="30dp"
+                android:id="@+id/tv_desc"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Due on Monday, 10/10/17"
+                android:textSize="21sp"
+                android:textColor="#234a56"
+                android:textStyle="bold"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Recurring Daily"
+                android:textSize="21sp"
+                android:textColor="#234a56"
+                android:textStyle="bold"
+                android:layout_marginBottom="10dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="bottom|right"
+            android:padding="15dp">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/button_edit"
+                android:text="Edit"
+                android:background="#89b9c5"
+                android:textColor="#f8f8f6"
+                android:textSize="20sp"
+                android:padding="9dp"
+                android:layout_marginRight="25dp"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/button_complete"
+                android:text="Complete"
+                android:background="#417d95"
+                android:textColor="#f8f8f6"
+                android:textSize="20sp"
+                android:padding="9dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</FrameLayout>

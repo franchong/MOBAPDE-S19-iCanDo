@@ -1,0 +1,85 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.cheskalouise.icandov2.Search">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f8f8f6">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Level 1"
+            android:id="@+id/tv_level"
+            android:textSize="23sp"
+            android:textAlignment="center"
+            android:textColor="#417d95"
+            android:textStyle="bold"
+            android:padding="5dp"/>
+
+        <ProgressBar
+            android:id="@+id/pb_level"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="#89b9c5"
+            android:padding="7dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_total_points"
+                android:text="200 Points"
+                android:textSize="27sp"
+                android:textColor="#f8f8f6"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_earned"
+                android:text="Earned"
+                android:textSize="18sp"
+                android:textColor="#f8f8f6"/>
+
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rv_rewards"
+            android:layout_margin="15dp">>
+        </android.support.v7.widget.RecyclerView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="bottom|right"
+            android:padding="15dp">
+
+            <Button
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:id="@+id/button_addReward"
+                android:background="#417d95"
+                android:text="+"
+                android:textColor="#f8f8f6"
+                android:textSize="20sp"
+                android:padding="9dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

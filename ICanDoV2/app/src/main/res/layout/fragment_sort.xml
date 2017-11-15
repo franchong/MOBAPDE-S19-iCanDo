@@ -1,0 +1,134 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.cheskalouise.icandov2.Sort">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sort By"
+            android:textSize="30dp"
+            android:textColor="#234a56"
+            android:textStyle="bold"
+            android:layout_marginBottom="15dp"/>
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <RadioButton android:id="@+id/radio_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Title"
+                android:onClick="onRadioButtonClicked"
+                android:textSize="21sp"
+                android:textColor="#234a56"
+                android:textStyle="bold"
+                android:layout_marginBottom="10dp"/>
+
+            <RadioButton android:id="@+id/radio_duedate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Due Date"
+                android:onClick="onRadioButtonClicked"
+                android:textSize="21sp"
+                android:textColor="#234a56"
+                android:textStyle="bold"
+                android:layout_marginBottom="10dp"/>
+
+            <RadioButton android:id="@+id/radio_points"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Points"
+                android:onClick="onRadioButtonClicked"
+                android:textSize="21sp"
+                android:textColor="#234a56"
+                android:textStyle="bold"
+                android:layout_marginBottom="10dp"/>
+
+            <RadioButton android:id="@+id/radio_creation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Creation Date"
+                android:onClick="onRadioButtonClicked"
+                android:textSize="21sp"
+                android:textColor="#234a56"
+                android:textStyle="bold"
+                android:layout_marginBottom="10dp"/>
+
+        </RadioGroup>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sort Option By"
+            android:textSize="30dp"
+            android:textColor="#234a56"
+            android:textStyle="bold"
+            android:layout_marginBottom="15dp"/>
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton android:id="@+id/radio_asc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ascending"
+                android:onClick="onRadioButtonClicked"
+                android:textSize="21sp"
+                android:textColor="#234a56"
+                android:layout_marginBottom="10dp"/>
+
+            <RadioButton android:id="@+id/radio_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Descending"
+                android:onClick="onRadioButtonClicked"
+                android:textSize="21sp"
+                android:textColor="#234a56"
+                android:layout_marginBottom="10dp"/>
+
+        </RadioGroup>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="bottom|right"
+        android:padding="15dp">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:id="@+id/button_cancel"
+            android:background="#89b9c5"
+            android:textColor="#f8f8f6"
+            android:textSize="20sp"
+            android:padding="9dp"
+            android:layout_marginRight="25dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Confirm"
+            android:id="@+id/button_confirm"
+            android:background="#417d95"
+            android:textColor="#f8f8f6"
+            android:textSize="20sp"
+            android:padding="9dp"/>
+    </LinearLayout>
+
+
+</FrameLayout>

@@ -1,0 +1,93 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.cheskalouise.icandov2.ViewTask">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f8f8f6">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_task_title"
+                android:text="Laundry"
+                android:textSize="27sp"
+                android:textColor="#234a56"
+                android:textStyle="bold"
+                android:layout_marginBottom="15dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_task_description"
+                android:text="Lorem ipsum dolor sit amet, consectur adipsicing elit"
+                android:textSize="20sp"
+                android:textColor="#234a56"
+                android:layout_marginBottom="30dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_task_due"
+                android:text="Due on 10/10/17 (M)"
+                android:textSize="21sp"
+                android:textColor="#234a56"
+                android:textStyle="bold"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_task_recurring"
+                android:text="Recurring Daily"
+                android:textSize="21sp"
+                android:textColor="#234a56"
+                android:textStyle="bold"
+                android:layout_marginBottom="10dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="bottom|right"
+            android:padding="15dp">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/button_view_edit"
+                android:background="#89b9c5"
+                android:text="Edit"
+                android:textColor="#f8f8f6"
+                android:textSize="20sp"
+                android:padding="9dp"
+                android:layout_marginRight="25dp"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/button_view_complete"
+                android:background="#417d95"
+                android:text="Complete"
+                android:textColor="#f8f8f6"
+                android:textSize="20sp"
+                android:padding="9dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</FrameLayout>

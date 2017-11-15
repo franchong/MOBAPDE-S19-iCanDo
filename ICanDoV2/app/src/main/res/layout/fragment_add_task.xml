@@ -1,0 +1,185 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.cheskalouise.icandov2.AddTask">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#f8f8f6">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/button_menu"
+                android:src="@drawable/menu"
+                android:padding="10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_title"
+                    android:text="Title"
+                    android:textSize="23sp"
+                    android:textColor="#234a56"
+                    android:layout_marginBottom="10dp"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:id="@+id/et_title"
+                    android:layout_marginBottom="15dp"
+                    android:textSize="20sp"
+                    android:padding="7dp"
+                    android:background="@drawable/shape"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_description"
+                    android:layout_marginBottom="10dp"
+                    android:text="Description"
+                    android:textSize="23sp"
+                    android:textColor="#234a56"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:id="@+id/et_description"
+                    android:layout_marginBottom="15dp"
+                    android:textSize="20sp"
+                    android:padding="7dp"
+                    android:gravity="top"
+                    android:background="@drawable/shape"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_dueDate"
+                    android:text="Due Date"
+                    android:textSize="23sp"
+                    android:textColor="#234a56"
+                    android:layout_marginBottom="10dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:id="@+id/tv_date"
+                        android:text=""
+                        android:textSize="20sp"
+                        android:padding="7dp"
+                        android:gravity="center_vertical"
+                        android:background="@drawable/shape"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/button_date"
+                        android:src="@drawable/calendar"
+                        android:layout_marginLeft="10dp"/>
+
+                </LinearLayout>
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/cb_recurring"
+                    android:text="Recurring"
+                    android:textSize="20sp"
+                    android:textColor="#234a56"/>
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/rb_group"
+                    android:paddingLeft="25dp">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/rb_daily"
+                        android:text="Daily"
+                        android:textSize="20sp"
+                        android:textColor="#234a56"/>
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/rb_weekly"
+                        android:text="Weekly"
+                        android:textSize="20sp"
+                        android:textColor="#234a56"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/rb_monthly"
+                        android:text="Monthly"
+                        android:textSize="20sp"
+                        android:textColor="#234a56"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/rb_specificDate"
+                        android:text="Specific Date"
+                        android:textSize="20sp"
+                        android:textColor="#234a56"/>
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="bottom|right"
+                android:padding="15dp">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/button_cancel"
+                    android:background="#dc5b5d"
+                    android:text="Cancel"
+                    android:textColor="#f8f8f6"
+                    android:textSize="20sp"
+                    android:padding="9dp"
+                    android:layout_marginRight="25dp"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/button_save"
+                    android:background="#417d95"
+                    android:text="Save"
+                    android:textColor="#f8f8f6"
+                    android:textSize="20sp"
+                    android:padding="9dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+</FrameLayout>
